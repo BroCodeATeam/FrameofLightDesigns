@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87c5bbba-69ec-40bb-aa61-be761981bcbe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/style/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/style/index.css" afterDir="false" />
-    </list>
+    <list default="true" id="87c5bbba-69ec-40bb-aa61-be761981bcbe" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +90,7 @@
       <workItem from="1650584064799" duration="5320000" />
       <workItem from="1650591597039" duration="203000" />
       <workItem from="1650636716770" duration="2337000" />
-      <workItem from="1650642559904" duration="15703000" />
+      <workItem from="1650642559904" duration="16065000" />
     </task>
     <servers />
   </component>
@@ -103,7 +101,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$/frontend" />
-      <path value="https:/github.com/BruhCodeATeam/FrameofLightDesigns" />
+      <path value="https:/github.com/BroCodeATeam/FrameofLightDesigns" />
     </ignored-roots>
   </component>
 </project>
