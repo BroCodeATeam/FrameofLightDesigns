@@ -1,10 +1,49 @@
 import React, {useState} from 'react'
-import { Link } from 'gatsby'
-import Navlinks from './Navlinks'
+import { Link } from 'gatsby-link'
+// router
+import { withRouter } from 'react-router-dom'
+import data from './Navlinks.json'
 
 import Logo from '../../assets/images/Camera-Aperture---Rainbow---Website---Med.png'
 
-export default function Navbar() {
+export default function Navbar(props) {
+    // conditionally render dropdown affect based on this boolean
+    const [openMenu, setOpenMenu] = useState(false)
+
+    // takes route string as parameter
+    const pushToRoute = route => {
+        props.history.push(route)
+        setOpenMenu(false)
+    }
+
+    // render each menu item after initial Menu button
+    const renderMenuItems = data => {
+        const colorArr = ["#9b5de5", "#f15bb5", "#00BBF9"];
+
+        let colorCounter = -1;
+        return data.menu.map((item, index) => {
+
+            // if counter is over 2, resets to 0
+            // for colorArr bracket notation to get sequence of colors
+            colorCounter < 2 ? colorCounter++ : colorCounter = 0
+
+            // dynamic styles for each menu item
+            const itemStyle = {
+                "top": `${index * 1.8}em`,
+                "backgroundColor": colorArr[colorCounter]
+            }
+
+            return (
+                <div className="m-item"
+                     key={item.id}
+                     style={openMenu ? itemStyle : null}
+                     onClick={() => pushToRoute(item.route)}>
+                    {item.name}
+                </div>
+            )
+        })
+
+    }
 
     const styles = {
         className: 'hover:bg-blue-300 text-white px-3 py-2 rounded-md text-sm font-medium'
@@ -12,11 +51,14 @@ export default function Navbar() {
 
     return (
         <div className='bg-gradient-to-t from-blue-900 to-blue-600 drop-shadow-lg'>
-            <div>
-                <img className='' src={Logo} alt=''/>
-            </div>
-            <div>
-                {Navlinks.map(link => (<Link className={styles.className} to={link.link}>{link.title}</Link> ))}
+            <div className="Menu">
+                <div className={"m-item m-logo"}
+                     onClick={() => setOpenMenu(!openMenu)}>
+                    Menu
+                </div>
+
+                {renderMenuItems(data)}
+
             </div>
         </div>
     );
