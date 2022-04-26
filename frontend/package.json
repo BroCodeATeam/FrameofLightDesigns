@@ -5,31 +5,12 @@
   "dependencies": {
     "@headlessui/react": "^1.5.0",
     "@heroicons/react": "^1.0.6",
-<<<<<<< HEAD
     "eslint-config-react-app": "^7.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-=======
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^14.1.1",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.4",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-testing-library": "^5.3.1",
-    "gatsby": "^4.12.1",
-    "gatsby-link": "^4.12.1",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "video-react": "^0.15.0",
->>>>>>> 93e0815ba7f778e5b1df98852a0020376a76e325
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -58,11 +39,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
-<<<<<<< HEAD
-    "eslint": "^8.14.0",
-    "eslint-plugin-jest": "^26.1.5",
-=======
->>>>>>> 93e0815ba7f778e5b1df98852a0020376a76e325
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24"
   }
