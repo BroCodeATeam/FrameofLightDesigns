@@ -72,7 +72,7 @@ export default function Navbar() {
                                         <a href='/services/floral-design' className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Floral Artistry
                                             <ul className="py-1 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
                                                 <li>
-                                                    <a href='/about-us/our-family/benjamin-hodder' className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Benjamin Hodder</a>
+                                                    <a href='/services/floral-design/artistry-booths-competitions' className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Artistry, Booths, and Competitions</a>
                                                 </li>
                                                 <li>
                                                     <a href='/about-us/our-family/philip-r-mcdavid' className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Philip R. McDavid</a>
