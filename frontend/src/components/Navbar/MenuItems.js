@@ -346,7 +346,7 @@ const routes = [
     {
         id: 4,
         label: "Contact Us",
-        "links": "/contact-us"
+        path: "/contact-us"
     }
 ]
 
