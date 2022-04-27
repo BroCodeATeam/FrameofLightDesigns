@@ -6,14 +6,14 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-        <div className="w-screen h-screen bg-gradient-to-b from-slate-500 to-blue-900">
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route exact path='/' element={<Home />} />
-            </Routes>
-        </Router>
-        </div>
+      <div className="w-full h-screen bg-gradient-to-b from-slate-500 to-indigo-300">
+          <Router>
+              <Navbar />
+              <Routes>
+                  <Route exact path='/' element={<Home />} />
+              </Routes>
+          </Router>
+      </div>
   );
 }
 
