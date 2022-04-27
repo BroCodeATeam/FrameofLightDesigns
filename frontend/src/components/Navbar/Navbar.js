@@ -3,6 +3,8 @@ import MenuItems from "./MenuItems";
 
 import Logo from '../../assets/images/Camera-Aperture---Rainbow---Website---Med.png'
 
+import '../../style/App.css'
+
 const Navbar = () => {
     return (
         <nav className='w-full h-auto bg-gradient-to-b from-blue-500 to-slate-500'>
