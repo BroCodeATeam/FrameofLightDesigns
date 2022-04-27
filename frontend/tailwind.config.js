@@ -1,7 +1,6 @@
 module.exports = {
   content: [
       './src/**/*.{js,jsx,ts,tsx}',
-    "./node_modules/flowbite/**/*.js"
   ],
   variants: {
     display: ['responsive', 'group-hover', 'group-focus'],
@@ -30,7 +29,5 @@ module.exports = {
       // => @media (min-width: 1536px) { ... }
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  plugins: [],
 };

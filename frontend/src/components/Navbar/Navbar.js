@@ -1,13 +1,13 @@
-import navLinks from "./navLinks";
+import {navLinks} from "./navLinks";
 import MenuItems from "./MenuItems";
 
 import Logo from '../../assets/images/Camera-Aperture---Rainbow---Website---Med.png'
 
 const Navbar = () => {
     return (
-        <nav className='w-full h-auto bg-gradient-to-b from-blue-600 to-blue-900'>
+        <nav className='w-full h-auto bg-gradient-to-b from-blue-500 to-slate-500'>
             <div>
-                <img src={Logo} alt=''/>
+                <img src={Logo} alt='Frame of Light Designs Logo'/>
             </div>
             <ul className="menus">
                 {navLinks.map((menu, index) => {

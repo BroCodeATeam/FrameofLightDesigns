@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-        <div className="w-screen h-screen bg-gradient-to-b from-blue-900 to-blue-600">
+        <div className="w-screen h-screen bg-gradient-to-b from-slate-500 to-blue-900">
         <Router>
             <Navbar />
             <Routes>

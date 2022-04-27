@@ -1,4 +1,4 @@
-const navLinks = [
+export const navLinks = [
     {
         id: 1,
         label: "Home",
@@ -349,5 +349,3 @@ const navLinks = [
         path: "/contact-us"
     }
 ]
-
-export default navLinks
