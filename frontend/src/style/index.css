@@ -2,56 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 @layer components {
-    /* Header Menu */
-    .headerMenu .menuItem > a::before {
-        @apply absolute  w-0 -bottom-7;
-        content: "";
-        height: 3px;
-        transition: all 0.3s ease-in-out 0s;
+    a.skip-main {
+        @apply absolute top-[40px] w-[1px] h-[1px] overflow-hidden;
+        left: -999px;
+        z-index: -999;
+        background: #2d2828;
     }
 
-    .subMenu {
-        visibility: hidden;
-        transition: all 0.4s;
-        top: calc(100% + 25px);
+    a.skip-main:focus,
+    a.skip-main:active {
+        @apply text-white bg-[#2d2828] left-[5px] top-[50px] min-w-[200px] text-center my-[10px] mx-[5px] p-[10px] text-base z-[999] no-underline border border-black;
     }
-
-    .subMenu {
-        width: 220px;
+    /* Nav */
+    nav li {
+        transition-duration: 0.5s;
     }
-
-    @media (min-width: 1280px) {
-        .subMenu {
-            width: 240px;
-        }
+    nav  li:hover,
+    nav li:focus-within {
+        @apply cursor-pointer;
     }
-    .subMenuChild {
-        transition: all 0.3s;
+    nav  li.no-pointer:hover,
+    nav li.no-pointer:focus-within {
+        @apply cursor-default;
     }
-    .subMenu li:hover > .subMenuChild {
-        @apply opacity-100 visible -top-3 left-60;
+    nav ul li ul {
+        @apply bg-white lg:left-0 px-0 py-1 lg:shadow-lg lg:absolute bg-gray-400 lg:max-w-[180px] w-full lg:w-[180px] lg:min-w-[180px] pl-8 lg:pl-0;
+        z-index:9999;
+        transition: all 0.5s ease;
+        right: -20px;
     }
-
-    .headerMenu .menuItem:hover > a::before {
-        @apply w-full;
+    nav ul li a {
+        @apply block  bg-transparent group-hover:text-white group-hover:bg-gray-400;
     }
-
-    .headerMenu .menuItem:hover > .subMenu {
-        visibility: visible;
-        @apply top-full;
+    nav ul li:hover > a {
+        @apply text-gray-900;
     }
+    nav ul li ul ul {
+        @apply top-0;
+        right: -180px;
+        left:auto;
+    }
+    nav ul li img {
+        @apply absolute right-[10px];
+        top: calc(50% - 4px);
+    }
+    /* end nav */
 }
-=======
-@layer base {
-    li {
-        @apply p-4
-    }
-
-    button {
-        @apply text-white border bg-gradient-to-b from-blue-900 to-blue-600 border-indigo-600
-        hover:bg-transparent hover:text-indigo-600 rounded-md
-    }
-}
->>>>>>> 93e0815ba7f778e5b1df98852a0020376a76e325
