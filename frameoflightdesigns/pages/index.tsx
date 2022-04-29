@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import {Navbar} from "../components/navbar/Navbar";
 
 const Home: NextPage = () => {
   return (
-      <div>
+      <div className='bg-gradient-to-t from-folpd-reds-dk to-folpd-reds-ruby'>
+          <Navbar />
         <div className='w-full h-screen bg-bgimage bg-no-repeat bg-cover bg-center'>
 
           <Head>
