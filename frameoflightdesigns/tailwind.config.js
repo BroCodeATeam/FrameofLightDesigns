@@ -31,13 +31,24 @@ module.exports = {
         colors: {
             transparent: 'transparent',
             folpd: {
-                hblue: '#2D26A1',
-                shirts: '#1c70bf',
-                tidalblue: '#139FB9',
-                ltblue: '#35AFD3',
-                sky: '#7DE7D6',
-                emgreen: '#0A6830',
-                hbteal: '#339492'
+                blues: {
+                    hblue: '#2D26A1',
+                    shirts: '#1c70bf',
+                    tidalblue: '#139FB9',
+                    ltblue: '#35AFD3'
+                },
+                greens: {
+                    sky: '#7DE7D6',
+                    emgreen: '#0A6830',
+                    hbteal: '#339492'
+                },
+                reds: {
+                    vibrant: '#e10531',
+                    ruby: '#ae001a',
+                    mdrare: '#a50727',
+                    md: '#850014',
+                    dk: '#6b0015'
+                }
             }
         }
     },
