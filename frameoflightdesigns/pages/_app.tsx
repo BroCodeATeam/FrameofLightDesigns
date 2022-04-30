@@ -4,8 +4,8 @@ import {Navbar} from "../components/navbar/Navbar";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <div>
+      <Navbar />
       <div>
-        <Navbar />
       </div>
       <Component {...pageProps} />
   </div>

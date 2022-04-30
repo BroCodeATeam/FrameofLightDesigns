@@ -7,8 +7,8 @@ import Logo from '../../public/assets/images/Camera-Aperture---Rainbow---Website
 
 export const Navbar = () => {
     return (
-        <header className='w-screen h-5 flex items-center flex-wrap'>
-            <nav className='fixed top-0 z-50 w-full bg-gradient-to-t from-folpd-reds-dk to-folpd-reds-ruby text-white'>
+        <nav className='w-screen h-5 flex items-center flex-wrap bg-gradient-to-t from-folpd-reds-dk to-folpd-reds-ruby text-white'>
+            <div className='fixed top-0 z-50 w-full bg-gradient-to-t from-folpd-reds-dk to-folpd-reds-ruby text-white'>
                 <div className='container flex items-center mx-auto md:flex-wrap lg:flex-wrap xl:flex-wrap'>
                     <div className='flex w-full text-white md:w-1/2 md:justify-start'>
                         <div style={{ position: "relative", width: "150px", height: "50px" }}>
@@ -30,7 +30,7 @@ export const Navbar = () => {
                         <h3>Login</h3>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
     );
 };
