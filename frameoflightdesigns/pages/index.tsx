@@ -4,8 +4,7 @@ import {Navbar} from "../components/navbar/Navbar";
 
 const Home: NextPage = () => {
   return (
-      <div className='bg-gradient-to-t from-folpd-reds-dk to-folpd-reds-ruby'>
-          <Navbar />
+      <div>
         <div className='w-full h-screen bg-bgimage bg-no-repeat bg-cover bg-center'>
 
           <Head>
