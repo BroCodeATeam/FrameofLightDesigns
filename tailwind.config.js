@@ -20,7 +20,7 @@ module.exports = {
             'wbrush': ['Water Brush', 'cursive']
         },
         backgroundImage: {
-            'bubbles': "url('../../assets/images/13.png')"
+            'bgimage': "url('/assets/images/13.png')"
         },
         backgroundPosition: {
             center: 'center'

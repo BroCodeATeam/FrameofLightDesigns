@@ -26,7 +26,7 @@ export default function MenuItem({
         <>
             <div className={selected ? "selected" : ""} depth={depth}>
                 <Link href={url} passHref>
-                    <div className="menu-item">
+                    <div className='flex items-center gap-1 text-white'>
                         <span>{name}</span>
                     </div>
                 </Link>

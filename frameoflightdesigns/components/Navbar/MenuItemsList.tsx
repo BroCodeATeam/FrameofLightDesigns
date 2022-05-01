@@ -7,7 +7,7 @@ type MenuItemsListProps = {
 
 export default function MenuItemsList({ options }: MenuItemsListProps) {
     return (
-        <div className='flex flex-no-wrap content-center text-white'>
+        <div className='hidden flex gap-[40px] md:inline-flex items-center space-x-5'>
             {options.map((option) => (
                 <MenuItem menuItem={option} key={option.id} />
             ))}

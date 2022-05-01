@@ -10,8 +10,8 @@ export default function ExpandIcon({
                                        handleClick,
                                    }: ExpandIconPros) {
     return isExpanded ? (
-        <ExpandLess onClick={handleClick} />
+        <ExpandLess className='flex items-center gap-1 text-white' onClick={handleClick} />
     ) : (
-        <ExpandMore onClick={handleClick} />
+        <ExpandMore className='flex items-center gap-1 text-white' onClick={handleClick} />
     );
 }
