@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import {useRouter} from "next/router";
 
-import {menu} from './MenuItems'
+import {menu} from '../../constants/menu-items'
 
 import Logo from '../../public/assets/images/Camera-Aperture---Rainbow---Website---Med.png'
 
@@ -20,7 +20,7 @@ export default function Navbar() {
                         <Image src={Logo} alt='Frame of Light Designs Logo' layout="fill" objectFit="contain" priority />
                     </div>
 
-                    <div className='flex items-center text-folpd-blues-shirts p-3'>
+                    <div className='flex items-center text-folpd-greens-emgreen p-3'>
                         {menu &&
                             menu.map((item) => (
                                 <Link key={item.url} href={item.url}>
@@ -28,11 +28,11 @@ export default function Navbar() {
                                         className={` ${
                                             item.children &&
                                             item.url === `${'/' + router.pathname.split('/')[1]}`
-                                                ? 'bg-blue-500 text-white pt-2 pb-5 px-2 mt-3 rounded-t-md'
+                                                ? 'bg-folpd-greens-emgreen text-white pt-2 pb-5 px-2 mt-3 rounded-t-md'
                                                 : `${
                                                     !item.children &&
                                                     item.url === '/' + router.pathname.split('/')[1]
-                                                        ? 'bg-blue-500 text-white p-2 rounded-md'
+                                                        ? 'bg-folpd-greens-emgreen text-white p-2 rounded-md'
                                                         : ''
                                                 }`
                                         }`}
