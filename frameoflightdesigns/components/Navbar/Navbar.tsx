@@ -28,11 +28,11 @@ export default function Navbar() {
                                         className={` ${
                                             item.children &&
                                             item.url === `${'/' + router.pathname.split('/')[1]}`
-                                                ? 'bg-blue-500 pt-2 pb-5 px-2 mt-3 rounded-t-md'
+                                                ? 'bg-blue-500 text-white pt-2 pb-5 px-2 mt-3 rounded-t-md'
                                                 : `${
                                                     !item.children &&
                                                     item.url === '/' + router.pathname.split('/')[1]
-                                                        ? 'bg-blue-500 p-2 rounded-md'
+                                                        ? 'bg-blue-500 text-white p-2 rounded-md'
                                                         : ''
                                                 }`
                                         }`}
