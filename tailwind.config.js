@@ -35,12 +35,16 @@ module.exports = {
                     hblue: '#2D26A1',
                     shirts: '#1c70bf',
                     tidalblue: '#139FB9',
-                    ltblue: '#35AFD3'
+                    ltblue: '#35AFD3',
+                    leftblue: '#135E55'
                 },
                 greens: {
+                    ltstgreen: '#A1D1BA',
                     sky: '#7DE7D6',
                     emgreen: '#0A6830',
-                    hbteal: '#339492'
+                    hbteal: '#339492',
+                    dkgreen: '#369783',
+                    rtgreen: '#38886D'
                 },
                 reds: {
                     vibrant: '#e10531',

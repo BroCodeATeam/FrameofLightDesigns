@@ -1,13 +1,12 @@
 import 'tailwindcss/tailwind.css'
 import type { AppProps } from 'next/app'
-import Navbar from "../components/Navbar/Navbar";
+import Layout from "../components/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <div>
-    <div>
-      <Navbar />
-    </div>
-  <Component {...pageProps} />
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   </div>
 }
 
