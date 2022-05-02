@@ -36,7 +36,8 @@ module.exports = {
                     shirts: '#1c70bf',
                     tidalblue: '#139FB9',
                     ltblue: '#35AFD3',
-                    leftblue: '#135E55'
+                    leftblue: '#135E55',
+                    bluegrass: '#013439'
                 },
                 greens: {
                     ltstgreen: '#A1D1BA',
