@@ -44,6 +44,33 @@ export default function Navbar() {
                     </div>
                 </div>
             </nav>
+            {menu &&
+                menu.map((submenu) => {
+                    if (
+                        submenu.children &&
+                        submenu.url === `${'/' + router.pathname.split('/')[1]}`
+                    ) {
+                        return (
+                            <div className="flex items-center bg-folpd-greens-emgreen text-white h-16">
+                                <div className="container mx-auto space-x-4">
+                                    {submenu.children.map((sub) => (
+                                        <Link key={sub.name} href={sub.url}>
+                                            <a
+                                                className={` ${
+                                                    sub.url === router.pathname
+                                                        ? 'bg-folpd-greens-emgreen text-white p-2 rounded-sm'
+                                                        : ''
+                                                }`}
+                                            >
+                                                {sub.name}
+                                            </a>
+                                        </Link>
+                                    ))}
+                                </div>
+                            </div>
+                        )
+                    }
+                })}
         </header>
     );
 };
